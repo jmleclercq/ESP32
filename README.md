@@ -10,9 +10,7 @@ Créer un capteur de température et d'humidité pour HA à partir d'une carte E
 
 ## 📖 Présentation
 
-Si, comme moi, vous en avez assez que vos objets connectés passent par des serveurs distants simplement pour afficher la température de votre salon, ce projet est pour vous.
-
-Grâce à **ESPHome**, il est possible de transformer un ESP32 ou ESP8266 en capteur intelligent qui communique directement avec **Home Assistant**, sans aucun passage par le cloud.
+Utiliser un ESP32 ou ESP8266 comme capteur intelligent qui communique directement avec **Home Assistant**, sans aucun passage par le cloud.
 
 ### Pourquoi ESPHome ?
 
@@ -28,13 +26,11 @@ ESPHome fait partie de l’Open Home Foundation.
 
 ## 🧰 Matériel requis
 
-* ESP32 (ex : Wemos D1 Mini, NodeMCU, ESP32 DevKit)
-* Capteur DHT22 (température et humidité)
+* ESP32 [Lien amazon](https://www.amazon.fr/dp/B071P98VTG)
+* Capteur DHT22 (température et humidité) [AZDelivery Capteur DHT22 Température & Humidité](https://www.amazon.fr/dp/B074MZSZYF)
 * Fils Dupont
-* Résistance 4.7kΩ (entre DATA et VCC, souvent déjà intégrée)
 * Un ordinateur avec Python installé
 
-Temps estimé : ~30 minutes
 
 ---
 
@@ -48,7 +44,6 @@ Le DHT22 possède 3 broches utiles :
 | GND          | GND                |
 | DATA         | GPIO4 (modifiable) |
 
-⚠️ Ajouter une résistance de 4.7kΩ entre DATA et VCC pour une meilleure stabilité si elle n’est pas intégrée au module.
 
 ---
 
@@ -135,23 +130,12 @@ Aucune dépendance cloud nécessaire.
 
 ---
 
-## 🔧 Aller plus loin
-
-* Ajouter des relais
-* Contrôler des LEDs
-* Utiliser d'autres capteurs (BME280, capteur de luminosité, etc.)
-* Créer un réseau domotique entièrement local
-
----
-
 ## 🎉 Résultat
 
 ✔ Capteur 100% local
 ✔ Aucune donnée envoyée à l’extérieur
 ✔ Intégration native Home Assistant
 ✔ Maintenance simple
-
-Avec un peu de curiosité et quelques euros de matériel, vous obtenez un capteur domotique fiable et respectueux de votre vie privée.
 
 ---
 
